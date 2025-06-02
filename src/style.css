@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+@import "./css/style.css";
+
+/* Or for individual imports */
+/* @import "./css/tokens/global/color.css";
+@import "./css/tokens/global/border.css";
+@import "./css/tokens/global/font.css";
+@import "./css/tokens/global/dimension.css";
+@import "./css/tokens/semantic/border.css";
+@import "./css/tokens/semantic/color.css";
+@import "./css/tokens/semantic/dimension.css";
+@import "./css/tokens/semantic/font.css";
+
+@import "./css/tokens/theme/neo.css";
+@import "./css/tokens/theme/revo.css";
+@import "./css/tokens/theme/uno.css";
+
+@import "./css/tokens/theme/neo/light.css";
+@import "./css/tokens/theme/neo/dark.css";
+@import "./css/tokens/theme/revo/light.css";
+@import "./css/tokens/theme/revo/dark.css";
+@import "./css/tokens/theme/uno/light.css";
+@import "./css/tokens/theme/uno/dark.css";
+
+@import "./css/components/accordion.css";
+@import "./css/components/avatar.css";
+@import "./css/components/badge.css";
+@import "./css/components/button.css";
+@import "./css/components/checkbox.css";
+@import "./css/components/clipboard.css";
+@import "./css/components/collapsible.css";
+@import "./css/components/dialog.css";
+@import "./css/components/link.css";
+@import "./css/components/listbox.css";
+@import "./css/components/menu.css";
+@import "./css/components/switch.css";
+@import "./css/components/switcher.css";
+@import "./css/components/tabs.css";
+@import "./css/components/toggle-group.css";
+@import "./css/components/tree-view.css"; */
+
+body {
+    font-family: var(--font-family);
+
+    @apply min-h-screen flex flex-col 
+           bg-layer 
+           text-contrast-2
+           font-(family-name:--font-family)
+           font-(--font-size)
+           tracking-(--font-letter-spacing-4)
+           leading-(--font-line-height);
+    
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-wrap: pretty;
+}
+
+header {
+    @apply flex flex-wrap items-center justify-center 
+           gap-(--gap-ui) 
+           p-(--padding-ui);
+}
+
+.logo {
+    @apply h-8 
+           text-(--color-accent-brand) 
+           hover:text-(--color-accent-brand-1)
+           transition-colors duration-200;
+}
+
+main {
+    @apply flex justify-start items-center 
+           max-w-3xl w-full mx-auto 
+           p-(--padding-ui);
+}
+
+.preview {
+    @apply flex flex-wrap gap-(--gap-ui);
+}
+
+
