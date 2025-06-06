@@ -42,39 +42,19 @@
 @import "./css/components/tree-view.css"; */
 
 body {
-    font-family: var(--font-family);
-
-    @apply min-h-screen flex flex-col 
-           bg-layer 
-           text-contrast-2
-           font-(family-name:--font-family)
-           font-(--font-size)
-           tracking-(--font-letter-spacing-4)
-           leading-(--font-line-height);
-    
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-wrap: pretty;
+    @apply min-h-dvh bg-(--color-layer);
 }
 
 header {
-    @apply flex flex-wrap items-center justify-center 
-           gap-(--gap-ui) 
-           p-(--padding-ui);
+    @apply flex flex-wrap items-center justify-center gap-(--gap-ui) p-(--padding-ui);
 }
 
 .logo {
-    @apply h-8 
-           text-(--color-accent-brand) 
-           hover:text-(--color-accent-brand-1)
-           transition-colors duration-200;
+    @apply h-8 text-(--color-accent-brand) hover:text-(--color-accent-brand-1) transition-colors duration-200;
 }
 
 main {
-    @apply flex justify-start items-center 
-           max-w-3xl w-full mx-auto 
-           p-(--padding-ui);
+    @apply flex justify-start items-center max-w-3xl w-full mx-auto p-(--padding-ui);
 }
 
 .preview {

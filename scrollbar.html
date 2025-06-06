@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/corex.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corex</title>
+  <title>Corex Scrollbar</title>
   <script type="module" src="/src/main.ts"></script>
 </head>
 
@@ -13,7 +13,7 @@
   <header>
     <a href="/">
       <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 428 136" height="428" width="136" version="1.1">
+        viewBox="0 0 428 136" version="1.1">
         <path
           d="M70.573 1.67C33.94 1.67 4.243 31.367 4.243 68c0 36.634 29.697 66.33 66.33 66.33s66.33-29.696 66.33-66.33c0-36.633-29.697-66.33-66.33-66.33m.05 102.736c-20.117 0-36.427-16.308-36.427-36.427 0-20.118 16.31-36.427 36.427-36.427 17.055 0 31.37 11.723 35.333 27.55H89.845c-3.365-7.255-10.713-12.301-19.222-12.301-11.678 0-21.179 9.501-21.179 21.18s9.501 21.178 21.18 21.178c8.539 0 15.907-5.08 19.256-12.377h16.095c-3.939 15.864-18.269 27.624-35.352 27.624"
           fill="currentColor" />
@@ -70,83 +70,27 @@
     </div>
   </header>
   <main>
-    <ul>
-      <li>
-        <p>
-          Read <a class="link link--font-brand" href="https://netoum.com/corex" target="_blank">Corex documentation
-            <svg class="link__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor">
-              <title>Opens in a new window</title>
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25">
-              </path>
-            </svg>
-          </a> and find many more examples </p>
-      </li>
-      <li>
-        <a href="/accordion" class="link link--lg">Accordion</a>
-      </li>
-      <li>
-        <a href="/avatar" class="link link--lg">Avatar</a>
-      </li>
-      <li>
-        <a href="/badge" class="link link--lg">Badge</a>
-      </li>
-      <li>
-        <a href="/button" class="link link--lg">Button</a>
-      </li>
-      <li>
-        <a href="/checkbox" class="link link--lg">Checkbox</a>
-      </li>
-      <li>
-        <a href="/clipboard" class="link link--lg">Clipboard</a>
-      </li>
-      <li>
-        <a href="/code" class="link link--lg">Code</a>
-      </li>
-      <li>
-        <a href="/collapsible" class="link link--lg">Collapsible</a>
-      </li>
-      <li>
-        <a href="/date-picker" class="link link--lg">Date Picker</a>
-      </li>
-      <li>
-        <a href="/dialog" class="link link--lg">Dialog</a>
-      </li>
-      <li>
-        <a href="/link" class="link link--lg">Link</a>
-      </li>
-      <li>
-        <a href="/listbox" class="link link--lg">Listbox</a>
-      </li>
-      <li>
-        <a href="/menu" class="link link--lg">Menu</a>
-      </li>
-      <li>
-        <a href="/scrollbar" class="link link--lg">Scrollbar</a>
-      </li>
-      <li>
-        <a href="/switch" class="link link--lg">Switch</a>
-      </li>
-      <li>
-        <a href="/switcher" class="link link--lg">Switcher</a>
-      </li>
-      <li>
-        <a href="/tabs" class="link link--lg">Tabs</a>
-      </li>
-      <li>
-      <li>
-        <a href="/timer" class="link link--lg">Timer</a>
-      </li>
-      <a href="/toggle-group" class="link link--lg">Toggle Group</a>
-      </li>
-      <li>
-        <a href="/tree-view" class="link link--lg">Tree View</a>
-      </li>
-      <li>
-        <a href="/typo" class="link link--lg">Typo</a>
-      </li>
-    </ul>
+    <div class="preview">
+      <div class="scrollbar" style="width: 150px; height: 150px; overflow-y: auto; justify-content: start;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi risus, aliquam vitae
+        suscipit non, mattis vel enim. Aliquam in leo luctus, accumsan neque varius, fringilla lorem.
+        Duis eros ipsum, efficitur non faucibus vel, eleifend nec urna. Nunc varius, nisl sed blandit
+        rhoncus, urna neque posuere nisi, eu lacinia odio felis sed nibh.
+      </div>
+      <div class="scrollbar" style="width: 150px; overflow-x: auto; justify-content: start;">
+        <div style="min-width: 300px; display: inline-block;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi risus.
+        </div>
+      </div>
+      <div class="scrollbar" style="width: 150px; height: 150px; overflow: auto; justify-content: start;">
+        <div style="min-width: 300px; min-height: 300px; display: block;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi risus, aliquam vitae
+          suscipit non, mattis vel enim. Aliquam in leo luctus, accumsan neque varius, fringilla lorem.
+          Duis eros ipsum, efficitur non faucibus vel, eleifend nec urna. Nunc varius, nisl sed blandit
+          rhoncus, urna neque posuere nisi, eu lacinia odio felis sed nibh.
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 

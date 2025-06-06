@@ -15,19 +15,24 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
     "tailwindcss": "^4.0.12",
-    "@netoum/corex": "0.0.2",
-    "@zag-js/types": "^1.14.0",
+    "@internationalized/date": "^3.8.1",
+    "@netoum/corex": "0.0.3",
+    "@types/prismjs": "^1.26.5",
     "@zag-js/accordion": "^1.14.0",
     "@zag-js/avatar": "^1.14.0",
     "@zag-js/checkbox": "^1.14.0",
     "@zag-js/clipboard": "^1.14.0",
     "@zag-js/collapsible": "^1.14.0",
+    "@zag-js/date-picker": "^1.14.0",
     "@zag-js/dialog": "^1.14.0",
     "@zag-js/listbox": "^1.14.0",
     "@zag-js/menu": "^1.14.0",
     "@zag-js/switch": "^1.14.0",
     "@zag-js/tabs": "^1.14.0",
+    "@zag-js/timer": "^1.14.0",
     "@zag-js/toggle-group": "^1.14.0",
-    "@zag-js/tree-view": "^1.14.0"
+    "@zag-js/tree-view": "^1.14.0",
+    "@zag-js/types": "^1.14.0",
+    "prismjs": "^1.30.0"
   }
 }
