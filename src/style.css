@@ -26,20 +26,8 @@
 
 @import "./css/components/accordion.css";
 @import "./css/components/avatar.css";
-@import "./css/components/badge.css";
-@import "./css/components/button.css";
-@import "./css/components/checkbox.css";
-@import "./css/components/clipboard.css";
-@import "./css/components/collapsible.css";
-@import "./css/components/dialog.css";
-@import "./css/components/link.css";
-@import "./css/components/listbox.css";
-@import "./css/components/menu.css";
-@import "./css/components/switch.css";
-@import "./css/components/switcher.css";
-@import "./css/components/tabs.css";
-@import "./css/components/toggle-group.css";
-@import "./css/components/tree-view.css"; */
+...
+ */
 
 body {
     @apply min-h-dvh bg-(--color-layer);
@@ -54,7 +42,7 @@ header {
 }
 
 main {
-    @apply flex justify-start items-center max-w-3xl w-full mx-auto p-(--padding-ui);
+    @apply flex flex-col justify-start items-center max-w-3xl w-full mx-auto p-(--padding-ui);
 }
 
 .preview {

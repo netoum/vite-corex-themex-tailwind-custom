@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/corex.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corex Clipboard</title>
+  <title>Corex Site Search</title>
   <script type="module" src="/src/main.ts"></script>
 </head>
 
@@ -30,7 +30,7 @@
           fill="currentColor" />
       </svg>
     </a>
-      <div class="switcher switcher-js switcher--duo switcher--sm switcher--circle" data-default-value="light"
+    <div class="switcher switcher-js switcher--duo switcher--sm switcher--circle" data-default-value="light"
       data-key="mode" data-on-value-change="update-mode-switcher-demo">
       <div data-part="root">
         <button data-part="item" data-value="light" aria-label="Switch to light color mode">
@@ -70,30 +70,22 @@
     </div>
   </header>
   <main>
-    <h1>Clipboard</h1>
+    <h1>Site Search</h1>
     <div class="preview">
-      <div class="clipboard clipboard-js" data-default-value="info@netoum.com">
+      <div class="site-search-js site-search" data-placeholder="Search site">
         <div data-part="root">
-          <label data-part="label">Contact Netoum</label>
-          <div data-part="control">
-            <input data-part="input">
-            <button data-part="trigger" class="button button--square">
-              <svg id="clipboard-copy" class="button__icon" stroke="currentColor" fill="none" stroke-width="2"
-                viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
-                </path>
-              </svg>
-              <svg id="clipboard-copied" class="button__icon" stroke="currentColor" fill="currentColor" stroke-width="0"
-                viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </div>
+        <div data-part="control">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="site-search__icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+        </svg>
+        <input data-part="input">
         </div>
-      </div>
+        <div data-part="positioner">
+        <ul data-part="content" class="scrollbar">
+        </ul>
+        </div>
+        </div>
+        </div>
     </div>
   </main>
 </body>
